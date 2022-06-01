@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<title>疫情防控</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="index.css" rel="stylesheet">
+<link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="lib/fonts/font-awesome.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="echarts.js"></script>
+<script type="text/javascript" src="china.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+    <div class="g-index">
+    	<div class="m-top">
+                <div class="m-top-right">
+                    <ul class="nav-items">
+                         <li class="nav-item"><a class="red" href="#">疫情防控首页</a></li>
+                         <li class="nav-item nav-item-dropdown">
+                                <a class="dropdown-trigger" href="#">政府疫情防控</a>
+                                <ul class="dropdown-menu">
+                                <li class="dropdown-menu-item">
+                                     <a href="http://www.gov.cn/fuwu/zt/yqfkzq/index.htm">中国政府网</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                     <a href="http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml">中国疫情宣传司</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                      <a href="http://www.nhc.gov.cn/jkj/new_index.shtml">疾病预防控制局</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                      <a href="http://www.nhc.gov.cn/">国家卫生健康委员会</a>
+                                </li>
+                                </ul>
+                        </li>
+                        <li class="nav-item nav-item-dropdown">
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                <a class="dropdown-trigger" href="#">高校疫情防控</a>
+                                <ul class="dropdown-menu">
+                                <li class="dropdown-menu-item">
+                                     <a href="https://xcb.seu.edu.cn/yqfk/">东南大学</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                     <a href="https://www.nju.edu.cn/yqfk/main.htm">南京大学</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                     <a href="https://yqfk.ytu.edu.cn/">烟台大学</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                     <a href="https://www.whu.edu.cn/xxfy/">武汉大学</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                     <a href="https://www.view.sdu.edu.cn/sddxxxfyfkztwz/sddxyqfkgzztwz.htm">山东大学</a>
+                                </li>
+                                </ul>
+                         </li>
+                         <li class="nav-item nav-item-dropdown">
+                                <a class="dropdown-trigger" href="#" >抗疫英雄</a>
+                                <ul class="dropdown-menu">
+                                <li class="dropdown-menu-item">
+                                     <a href="#" id="hero1">钟南山</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                     <a href="#" id="hero2">张伯礼</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                      <a href="#" id="hero3">张定宇</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                      <a href="#" id="hero4">陈薇</a>
+                                </li>
+                                 <li class="dropdown-menu-item">
+                                      <a href="#" id="hero5">李兰娟</a>
+                                </li>
+                                </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" id="knowledge">防疫知识</a></li>
+                        <li class="nav-item"><a href="#" id="map">各地防控</a></li>
+                          
+                    </ul>
+                </div>  
+    	</div>      
+        <div class="m-news">
+            <div class="banner">
+                <!--无序列表承载轮播的图片-->
+                <ul class="img">
+                    <li>
+                        <a href="https://www.dzwww.com/xinwen/guoneixinwen/202205/t20220525_10290451.htm">
+                            <img src="https://appimg.dzwww.com/share/2022/05/25/8f9526456607ebc_750.JPEG" >
+                            <div>更快更严阻断疫情传播！北京战“疫”焦点观察</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://finance.sina.com.cn/tech/2022-05-25/doc-imizirau4669694.shtml?finpagefr=p_114">
+                            <img src="https://n.sinaimg.cn/front20220525ac/781/w500h281/20220525/b4c4-47338462757f8b8c444c4c769ed1a77d.png">
+                            <div>后疫情时代，消毒机让病毒消灭在最后一公里</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://new.qq.com/omn/20220517/20220517A08GR100.html">
+                            <img src="https://inews.gtimg.com/newsapp_bt/0/14908366632/1000">
+                            <div>上海疫情最新消息！</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://sz.bendibao.com/news/2022525/890204.htm">
+                            <img src="http://imgbdb3.bendibao.com/szbdb/news/20225/25/2022525085734_86030.jpg" >
+                            <div>5月24日0-24时深圳疫情最新消息：无本土新增病例</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.163.com/dy/article/H83IRMAN0517NSBP.html">
+                            <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2022%2F0524%2Fd514c7ccj00rccigc001ec000hs00buc.jpg&thumbnail=660x2147483647&quality=80&type=jpg">
+                            <div>天津疫情最新消息！5月20日天津市疫情最新情况，刚刚发布</div>
+                        </a>
+                    </li>
+                </ul>
+                <!--用来放置圆点具体实施在js代码中呈现-->
+                <ul class="num"></ul>
+                <!--左右点击按钮-->
+                <div class="btn">
+                    <span class="prev"><</span>
+                    <span class="next">></span>
+                </div>
+            </div>
+            <div class="m-news-right">
+                <div class="m-news-right-ti">
+                    <h3>最新新闻</h3>
+                    <a href="#">更多&gt;&gt;</a> 
+                </div>
+                <div class="m-news-right-bd">
+                    <ul>
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="http://m.news.cn/bj/2022-05/25/c_1128683485.htm">【新华网】@北京各高校，市教委疫情防控工作最新部署来了</a>
+                            </div>
+                            <div class="news_date">2022-05-25</div>
+                        </li>
+                        
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="http://bj.people.com.cn/n2/2022/0519/c14540-35276817.html">【人民网】北京疾控详解"封控管控期间最后一次核酸检测要求满10天"政策</a>
+                            </div>
+                            <div class="m-news_date">2022-05-19</div>
+                        </li>
+                        
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="https://china.huanqiu.com/article/481sITrWtFv">【央视新闻客户端】国家统计局：短期内的疫情冲击改变不了消费发展长期向好的趋势</a>
+                            </div>
+                            <div class="m-news_date">2022-05-16</div>
+                        </li>
+                        
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="http://education.news.cn/20220525/606350c4272e4cd59b0b32b1ce5a65e9/c.html">【人民网】北京市委教育工委副书记李奕：北京中高考将“如期举行、应考尽考”</a>
+                            </div>
+                            <div class="news_date">2022-05-25</div>
+                        </li>   
+
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="http://www.news.cn/2022-05/25/c_1128683869.htm">【新华网】张文国：倒在疫情防控一线的“平凡英雄”</a>
+                            </div>
+                            <div class="m-news_date">2022-05-25</div>
+                        </li>
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="http://world.people.com.cn/n1/2022/0525/c1002-32429757.html">【人民网】世卫组织：全球累计新冠确诊病例达523786368例</a>
+                            </div>
+                            <div class="m-news_date">2022-05-25</div>
+                        </li>
+                        <li class="m-news-news">
+                            <div class="m-news_title">
+                                <a href="http://m.news.cn/2022-05/25/c_1128684013.htm">【新华网】教育部要求及时调整教学计划做好线上线下教学转换</a>
+                            </div>
+                            <div class="m-news_date">2022-05-24</div>
+                        </li>                            
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <div class="m-media">
+            <div class="Media">
+                  <img class="Media-figure" src="http://pic.lizhigushi.com/image/20200306/20200306152123_78846.jpg" alt="">
+                  <p class="Media-body">民之生计,国之大事,各司其早日战胜病毒</p>
+            </div>
+            <div class="Media">
+                  <img class="Media-figure" src="https://bpic.588ku.com/back_list_pic/21/07/09/e8f502ea6b60441d44e63e0148cee85e.jpg!/fw/640/quality/90/unsharp/true/compress/true" alt="">
+                  <p class="Media-body">关键时刻显担当，危急时刻见境界</p>
+            </div>
+                 <div class="Media">
+                  <img class="Media-figure" src="https://tse1-mm.cn.bing.net/th/id/R-C.0d36c922360ab740372cca02ae354185?rik=OpXRyNn4mq6%2b3Q&riu=http%3a%2f%2fwww.cqmm.gov.cn%2fimages%2fupload%2f20200215%2f15817449152163.png&ehk=wwUC%2fRJYejadsUcgb%2b%2b1o9aBPDL9FEvA6UuGLlNFZ%2fY%3d&risl=&pid=ImgRaw&r=0" alt="">
+                  <p class="Media-body">病毒可以被隔离，但温暖不会被隔离</p>
+            </div>
+        </div>
+        <div class="m-peo">
+            <h1 >抗疫英雄</h1>
+            <div class="m-peo-bd">
+             <div class="intro-l" id="int_hero1">
+                  <img class="intro-figure" src="https://bkimg.cdn.bcebos.com/pic/622762d0f703918fa0ecec3b6077319759ee3c6d6ea5?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" alt="">
+                  <div class="m-intro-l">
+                    <h2>国士无双——钟南山</h2>
+                    <p class="">花甲明志，他临危领军战非典；耄耋生辉，他星夜逆行奔武汉。不一样的年纪，同样的义无反顾。在许多人心中，他是医界泰斗，是社会良知，是必胜信心，是此次新冠肺炎疫情阻击战中，最有望力挽狂澜的勇者。17年过去了，我们最相信的，仍是他——钟南山</p>
+                    <p class="">2020年，新冠肺炎疫情汹涌而来。“没有特殊的情况，就不要去武汉了！”迷雾笼罩的春节前夕，一个让人踏实的声音响起，钟南山重新走进人们的视线，为社会重重敲响了警钟。</p>
+                     <p class="">然而人们很快发现，钟南山一边在提醒民众，一边自己却逆行深入武汉。1月18日傍晚，一张钟南山坐高铁的照片“刷屏”朋友圈：在奔赴武汉的高铁餐车一角，他满脸倦容，眉头紧锁，闭目养神，身前是一摞刚刚翻看的文件……这次小憩，是他连续4天96小时奔走北京、广州、武汉的一瞬间。谁能相信，他已是84岁高龄的老人。</p>
+                     <p class="">疫情发生后，钟南山再次临危受命，出任国家卫健委高级别专家组组长。“抗非”功臣再挂帅，他的真诚、他的勇毅、他的志气，如尖锐的刻刀，在抗击疫情的顽石上划下印记。这背后，是共产党人的初心、无私医者的精诚、朴素学者的大义。</p>
+                  </div>
+            </div>
+            <div class="intro-r" id="int_hero2">
+                  <div class="m-intro-r" >
+                    <h2>德术并彰——张伯礼</h2>
+                    <p class="">“国有危难时，医生即战士。宁负自己，不负人民！”他在抗击“非典”时立下的铮铮誓言在新冠肺炎疫情发生后又一次兑现。1月27日，农历大年初三，正在天津指导疫情防控工作的张伯礼临危受命飞赴武汉，作为中央疫情防控指导组专家组成员投身抗疫最前线。</p>
+                    <p class="">然而，在武汉超负荷的工作下，张伯礼胆囊炎发作，并于2月19日接受了微创胆囊摘除手术。他调侃道，“这回我把胆留在了武汉，更加与武汉市民肝胆相照了。”有人问他，为什么不从一线撤回？“武汉一线的工作还需要我，不可能撤回。我就是去给人治病的，自己得病是关键时刻掉链子，不值得说。但是病了怎么办？赶紧手术，继续上前线战斗，这是理所当然的事。”张伯礼说。</p>
+                     <p class="">手术后，医生要求他至少休息两个星期，张伯礼却说：“多给点药，住院一个星期就行。”在今年全国中小学生的“开学第一课”上，张伯礼动情地说：“中医把胆叫‘胆腑’。胆者，中正之官，决断出焉。胆虽然没了，但做决断的勇气不能少。”</p>
+                     <p class="">截至3月10日休舱，江夏方舱医院总共收治的564名患者中无一例转为重症，无一例复阳。3月19日，武汉新增确诊病例、新增疑似病例、现有疑似病例首次全部归零，这一天也恰逢张伯礼72岁生日，“‘武汉清零’对我就是最好的祝贺了”。</p>
+                  </div>
+                  <img class="intro-figure" src="https://bkimg.cdn.bcebos.com/pic/f31fbe096b63f6246b60c0eae50efcf81a4c500f058d?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxODA=,g_7,xp_5,yp_5/format,f_auto" alt="">
+            </div>
+            <div class="intro-l" id="int_hero3">
+                  <img class="intro-figure" src="https://bkimg.cdn.bcebos.com/pic/500fd9f9d72a6059252df47b3f7b239b033b5bb50c09?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5MzM=,g_7,xp_5,yp_5/format,f_auto" alt="">
+                  <div class="m-intro-l">
+                    <h2>渐冻”之躯与时间赛跑——张定宇</h2>
+                    <p class="">1963年出生的张定宇现任湖北省卫健委副主任、武汉市金银潭医院院长。2018年，他被确诊患上渐冻症，双腿日渐萎缩。情暴发后，张定宇以“渐冻”之躯冲锋在前，拖着高低不平的脚步追赶时间，带领医院干部职工救治2800余名患者，其中不少为重症、危重症患者。</p>
+                    <p class="">“我很幸运，自己病情发展不是那么快，所以我更加珍惜这份眷顾，尽可能多干一些工作，而我的工作就是救人。”回忆最难的日子，张定宇感慨道。但对家人，他觉得亏欠太多，就连妻子感染新冠肺炎住院，他也没能顾及。“知道她确诊，我都懵了，心里很害怕。”张定宇说，那晚回家路上，他想到妻子可能会逐渐转化成重症、危重症，最后拉都拉不回来，眼泪就忍不住往下淌。可即便有再多牵挂，张定宇还是选择在抗疫前线坚守。“我很内疚，我也许是个好医生，但不是个好丈夫。”</p>
+                     <p class="">张定宇在车后备厢里放了一根登山杖，扛不住时他会拿出来支撑自己行走。面对因拼命“赛跑”而加剧萎缩的双腿，他淡然地说，既然拦不住时间流逝，那就让它更有意义。“我从没想过做英雄。是所有人一起做出了牺牲与贡献，而我仅仅是他们中的一分子。”在张定宇心里，“人民英雄”国家荣誉称号不是授予他个人的，而是授予抗疫前线所有基层医务工作者的。</p>
+                  </div>
+            </div>
+             <div class="intro-r" id="int_hero4">
+                  <div class="m-intro-r">
+                    <h2>为国铸盾的巾帼院士——陈薇</h2>
+                    <p class="">2020年春节，一场突如其来的新冠肺炎疫情席卷而来，武汉被按下“暂停键”。号令如山，冲锋向前。中央军委一声令下，中国工程院院士、军事科学院军事医学研究院研究员陈薇，带领军事医学专家组奔赴武汉，连续奋战113天，和全国人民一同打赢这场艰苦卓绝的抗疫斗争。</p>
+                    <p class="">“一个个样本的背后，是一条条鲜活的生命，大疫当前，救命是天大的事。”她当即决定，挑起核酸检测的担子。仅用一天时间，他们就完成了帐篷式负压实验室和检测平台的搭建，每天能检测1000人份以上，而且很快就能出报告。这为缓解当时的核酸检测压力，起到了重要作用。那段时间，许多武汉市民通过各种渠道向他们求助。虽然每天的检测任务已经超负荷，但是面对那些期盼的眼神，哪怕已经筋疲力尽，他们还是会穿上防护服，返回实验室。</p>
+                     <p class="">团队成员每天都是从睁开眼一直忙到凌晨三四点钟，第二天一早又投身到紧张的工作中，始终坚守在与疫魔对垒的岗位上。很快，陈薇带领团队完成了疫苗设计、重组疫苗株构建和安全质控条件下生产制备。“实行3条基因工程技术路线并行，优中选优、快中求快，按照国际规范和国内法规完成疫苗研发制备。”陈薇介绍说。3月16日，疫苗获批进入临床，并在当天20时18分完成了第一针免疫接种。不久，疫苗率先进入Ⅱ期临床试验，公开发布临床试验数据。现在，他们研发的疫苗正在顺利推进Ⅲ期国际多中心临床试验……</p>
+                  </div>
+                  <img class="intro-figure" src="https://bkimg.cdn.bcebos.com/pic/1c950a7b02087bf40ad1f9059d9a402c11dfa8ec618f?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto" alt="">
+            </div>
+             <div class="intro-l" id="int_hero5">
+                  <img class="intro-figure" src="https://bkimg.cdn.bcebos.com/pic/6159252dd42a2834ac4caf5e54b5c9ea14cebff9?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" alt="">
+                  <div class="m-intro-l">
+                    <h2>女性力量——李兰娟</h2>
+                    <p class="">在武汉疫情爆发的初期，有一个人最先提出了封城的建议，这个人就是李兰娟院士。正是她这个提议，大大减缓了疫情传播的速度。虽然年岁已高，但是李兰娟院士依旧坚持在一线工作，成为最美的逆行者。</p>
+                    <p class="">李兰娟出身平凡，她的父母都是最普通的农民，所以家境贫寒。更为不幸的是，她的父亲由于眼部有疾病，所以无法下地干活，一家人生活的重担全部压在母亲的身上。她的母亲除了平时种地外，还会偶尔买山货，勉强维持家中花销。李兰娟内心十分清楚，要摆脱这样的生活，走出封闭的小山村，就必须依靠读书。</p>
+                     <p class="">之后李兰娟凭借自己的努力，从一名普通医生顺利升至浙江省卫生厅厅长，在任期间，她和自己的团队一起合作，成功研发出了人工肝，减少了重症肝炎的病死率。此后她还向世界推广此项目，并且在很多权威杂志上发表了有关人工肝的论文，因此在业界颇有名望。在2003年非典爆发的时候，李兰娟和她的团队几乎不眠不休，率先分离出了病毒毒株。</p>
+                      <p class="">2020年初新冠肺炎毫无预兆的爆发，李兰娟院士已经73岁的高龄，但是面对如此紧急的状况，她丝毫没有犹豫，立马带领她的团队奔赴武汉，开始病毒研究工作。虽然年事已高，但是在抗疫期间李兰娟院士并没有放松，她一天的休息时间不足四个小时，并且还主动到最危险的病房救治和探望患者。</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="m-ep" id="m-knowledge">
+             <h1 >防疫知识</h1>
+             <div class="m-ep-bd">
+                 <div class="m-ep-bd-ti">防疫知识牢记预防措施</div>
+                 <ul>
+                     <li>1.防控六坚持：坚持科学戴口罩，保持社交距离，保持手卫生，做好健康监测，做好饮食卫生，做好日常清洁消毒。</li>
+                     <li>2.坚持做好个人防护，出门随身携带口罩。人员密集、空气不流通、需要与他人近距离接触等情形下应及时戴口罩。</li>
+                     <li>3.预防病毒传播保持手卫生，清洁双手前尽量不要触碰口、眼、鼻；咳嗽、打喷嚏时要用纸巾或肘部衣物遮掩。</li>
+                     <li>4.有症状速就医，拖延只会误时机。如有发热、咳嗽、咽痛等症状，应就近前往医院发热门诊就诊。</li>
+                     <li>5.牢记食品安全五原则：食物处理前后洗手，选择新鲜干净的食物，加工器具保持清洁，生熟分开，食物彻底煮熟。</li>
+                     <li>6.疫情防控不能放松警惕，进出农贸市场、商场等公共场所应坚持佩戴口罩、配合体温测量，与他人保持一定距离。</li>
+                     <li>7.公众应坚持做好防护，尽量减少人员聚集，保持社交距离，按要求佩戴口罩，保护自己是对防疫的贡献。</li>
+                     <li>8.保持警惕不等于恐慌紧张，新冠肺炎可防可治，无需过分恐惧。科学防疫，不抢购、不囤积，不信谣、不传谣。</li>
+                     <li>9.公众有义务配合防疫工作，严格遵守防疫有关规定，如遇检查，请给予理解与配合，对自己负责，也对他人负责。</li>
+                     <li>10.做好疫情常态化防控需坚持做到科学佩戴口罩、减少人员聚集、加强通风消毒、提高健康素养和做好社区防控。</li>
+                     <li>11.共同战疫，需要您的一份力，如遇测温、查证、验码、登记，请主动配合，给予一份理解。</li>
+                     <li>12.抗击疫情，你我有责，不随意散播他人隐私，我们共同的敌人是病毒；只送祝福，不传谣言，别让错误信息帮倒忙。</li>
+                     <li>13.随着新冠疫苗附条件获批上市或疫苗产量逐步提高，将会有更多的疫苗投入使用。通过有序开展接种，符合条件的群众都能实现“应接尽接”。</li>
+                     <li>14.没有任何疫苗的保护率可以达到100%，接种新冠疫苗以后，应继续坚持做好戴口罩、勤洗手等个人防护措施，以更好地保障大家的安全。</li>
+                     <li>15.接种新冠疫苗一般不良反应主要表现为接种部位局部红肿疼痛，如出现高热（>38.5℃）或接种部位红肿（>2.5厘米）以及其他严重症状，应尽快就医处理。</li>
+                 </ul>
+                 <div class="m-ep-bd-ti">如何识别、判断及就医选择</div>
+                 <ul>
+                     <li>(1）无发热、无流行病学史：注意个人防护，增强免疫力；</li>
+                     <li>(2）无发热、有流行病学史：居家隔离，监测体温，必要时筛检病毒核酸，如有任何不适及时到定点医院发热门诊就诊；</li>
+                     <li>(3）发热、无流行病学史：居家隔离，社区医院就诊，监测体温，疾病如有进展及时到就近医院的发热门诊就诊；</li>
+                     <li>(4）发热、有流行病学史：立即到定点医院发热门诊就诊，减少人群接触，加强个人防护。</li>
+                 </ul>
+                  <div class="m-ep-bd-ti">在家中怎样预防新型冠状病毒传染</div>
+                     <ul>
+                         <li>(1）增强卫生健康意识，适量运动、早睡早起、不熬夜可提高自身免疫力；</li>
+                         <li>(2）保持良好的个人卫生习惯，咳嗽或打喷嚏时用纸巾掩住口鼻，经常彻底洗手，不用脏手触摸眼睛、鼻或口；</li>
+                         <li>(3）居室多通风换气并保持整洁卫生；</li>
+                         <li>(4）尽可能避免与有呼吸道疾病症状（如发热、咳嗽或打喷嚏等）的人密切接触；</li>
+                         <li>(5）密切关注发热、咳嗽等症状，出现此类症状一定要及时就近就医；</li>
+                         <li>(6）房间通风换气；如有疑似患者，居住过的环境一定要进行清洁、消毒，新型冠状病毒对热敏感，可用75%酒精、含氯消毒剂、过氧化氢消毒液等进行消毒。</li>
+                     </ul>
+             </div>
+        </div>
+        <div class="m-map">
+            <h1 >各地防控</h1>
+             <div class="m-map-tit">截止5.25日各省确诊人数</div>
+            <div id="main" >
+            </div>
+            <div class="m-map-list">       
+                    <a href="https://xcx.beijing.gov.cn/yqzc1/index.html" target="_blank">北京</a>          
+                    <a href="https://www.tj.gov.cn/sy/ztzl/tjsfyyqfkzt/" target="_blank">天津</a>                
+                    <a href="http://www.hebei.gov.cn/hebei/15067610/15068058/index.html" target="_blank">河北</a>                
+                    <a href="http://www.shanxi.gov.cn/ztjj/yqfkzccs/sjzccs/" target="_blank">山西</a>             
+                    <a href="http://www.nmg.gov.cn/ztzl/qlfkxxgzbdfynmgzxd/yqfkzccs/sjzccs/" target="_blank">内蒙古</a>         
+                    <a href="http://www.ln.gov.cn/qmzx/yqfkzccs/" target="_blank">辽宁</a>               
+                    <a href="http://www.jl.gov.cn/szfzt/jlzxd/tzgg/sj/" target="_blank">吉林</a>                
+                    <a href="https://www.hlj.gov.cn/987/index1.html" target="_blank">黑龙江</a>               
+                    <a href="https://www.shanghai.gov.cn/yqfkzccs/index.html" target="_blank">上海</a>                
+                    <a href="https://www.jiangsu.gov.cn/col/col83409/index.html" target="_blank">江苏</a>                
+                    <a href="https://www.zj.gov.cn/col/col1229562192/index.html" target="_blank">浙江</a>                
+                    <a href="https://www.ah.gov.cn/zwyw/ztzl/fkxxgzbdgrdfyyq/yqfkzccs/sjzccs/index.html" target="_blank">安徽</a>                
+                    <a href="http://www.fujian.gov.cn/zwgk/ztzl/yqfk/fkzc/" target="_blank">福建</a>               
+                    <a href="http://www.jiangxi.gov.cn/col/col61056/index.html" target="_blank">江西</a>
+                    <a href="http://www.shandong.gov.cn/col/col208935/index.html" target="_blank">山东</a>                
+                    <a href="https://www.henan.gov.cn/zt/2021zt/yqfkzccs/sjzccs/" target="_blank">河南</a>                
+                    <a href="http://www.hubei.gov.cn/zhuanti/2021zt/yqfkzccs/sjzccs/" target="_blank">湖北</a>                
+                    <a href="http://www.hunan.gov.cn/topic/yqfkzccs/yqfkzccs.html" target="_blank">湖南</a>                
+                    <a href="http://www.gd.gov.cn/gdywdt/zwzt/yqfkzccs/sjzc/index.html" target="_blank">广东</a>                
+                    <a href="http://www.gxzf.gov.cn/zt/jd/qlkjxxgzbdgrfyyq/zcwj_28024/" target="_blank">广西</a>
+                    <a href="https://www.hainan.gov.cn/hainan/zccs/list_jjdyyqfkzzz.shtml" target="_blank">海南</a>                
+                    <a href="http://www.cq.gov.cn/zt/yqfk/zccs/" target="_blank">重庆</a>
+                    <a href="https://www.sc.gov.cn/10462/yqfkzccs/yqzccszt.shtml" target="_blank">四川</a>            
+                    <a href="http://www.guizhou.gov.cn/zwgk/yqfkzccs/sjzccs/" target="_blank">贵州</a>                
+                    <a href="http://www.yn.gov.cn/ztgg/yqfk/yqztyqfkzccs/yqztsjzccs/" target="_blank">云南</a>                
+                    <a href="http://www.xizang.gov.cn/xwzx_406/ztzl_416/cxzt/zjz/zcxx/zzq/index.html" target="_blank">西藏</a>                
+                    <a href="http://www.shaanxi.gov.cn/xw/ztzl/zxzt/yqkg/sj/" target="_blank">陕西</a>                
+                    <a href="http://www.gansu.gov.cn/gsszf/c117038/yqfkcs.shtml" target="_blank">甘肃</a>                
+                    <a href="http://www.qinghai.gov.cn/xxgk/zwzt_2803/yqfk/sj/" target="_blank">青海</a>                
+                    <a href="http://www.nx.gov.cn/ztsj/zt/yqfkzccs/sjzccs/" target="_blank">宁夏</a>
+                    <a href="http://www.xinjiang.gov.cn/xinjiang/c102624/yqfk.shtml" target="_blank">新疆</a>
+                    <a href="http://www.xjbt.gov.cn/yqfk/sjzccs/" target="_blank">兵团</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
